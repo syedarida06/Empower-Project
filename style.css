@@ -195,7 +195,7 @@
 }
 
 .r {
-    background: #f9f9f9;   /* soft background */
+    background: #e6e0e0;   /* soft background */
     padding: 3rem 1rem;    /* spacing around section */
 }
 
@@ -603,7 +603,7 @@ summary::-webkit-details-marker{
 
 }
 
-/* Login Page */
+
 
 .login-page{
     min-height:100vh;
@@ -690,3 +690,113 @@ summary::-webkit-details-marker{
     text-decoration:none;
     font-weight:600;
 }
+
+
+/* ================= JOIN PAGE ================= */
+
+/* ================= JOIN BANNER ================= */
+
+.join-header{
+    background: linear-gradient(to right, #f8f3eb, #efe1cb);
+    text-align: center;
+    padding: 70px 20px;
+    border-bottom: 3px solid #cda977;
+}
+
+.join-header h1{
+    font-size: 48px;
+    color: #333;
+    margin-bottom: 18px;
+    letter-spacing: 1px;
+}
+
+.join-header p{
+    width: 65%;
+    margin: auto;
+    color: #555;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+/* Form Section */
+
+.join-container{
+    width: 700px;
+    max-width: 90%;
+    margin: 60px auto;
+    padding: 40px;
+
+    background: #e5d3c3;
+    border-radius: 10px;
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.join-container h2{
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 10px;
+    color: #403d3d;
+}
+
+.join-container p{
+    text-align: center;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.join-container form{
+    display: flex;
+    flex-direction: column;
+}
+
+.join-container input,
+.join-container select,
+.join-container textarea{
+
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 6px;
+
+    font-size: 15px;
+}
+
+.join-container input:focus,
+.join-container select:focus,
+.join-container textarea:focus{
+
+    outline: none;
+    border-color: #cda977;
+}
+
+.join-container textarea{
+    resize: vertical;
+}
+
+.join-container button{
+
+    background: #cda977;
+    color: black;
+
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+
+    font-size: 17px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.join-container button:hover{
+
+    background: #b58d58;
+    color: white;
+}
+
+
