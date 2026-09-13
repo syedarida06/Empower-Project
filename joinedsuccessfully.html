@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Registration Successful
+    </title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            Women & Child Empowerment
+        </div>
+
+
+        <ul class="navlinks">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="about.html">About</a>
+            </li>
+
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+
+        </ul>
+
+
+        <div class="button">
+
+            <button
+                onclick="window.location.href='join.html'"
+            >
+                Join Us
+            </button>
+
+        </div>
+
+    </nav>
+
+
+
+    <!-- ================= SUCCESS PAGE ================= -->
+
+    <main class="success-page">
+
+        <div class="success-card">
+
+
+            <!-- Success Tick -->
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+
+            <!-- Heading -->
+
+            <h1>
+                You've Joined Successfully!
+            </h1>
+
+
+            <p class="success-message">
+
+                Thank you for becoming a part of our community.
+                Your registration has been successfully completed.
+
+            </p>
+
+
+
+            <!-- Member ID -->
+
+            <div class="member-id-box">
+
+                <span>
+                    Your Member ID
+                </span>
+
+                <strong id="memberId">
+                    WCE-2026-00427
+                </strong>
+
+            </div>
+
+
+
+            <!-- Registration Details -->
+
+            <div class="details-box">
+
+                <h2>
+                    Registration Details
+                </h2>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Name
+                    </span>
+
+                    <strong id="displayName">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Email
+                    </span>
+
+                    <strong id="displayEmail">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Phone
+                    </span>
+
+                    <strong id="displayPhone">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        City
+                    </span>
+
+                    <strong id="displayCity">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Selected Role
+                    </span>
+
+                    <strong id="displayRole">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Registration Date
+                    </span>
+
+                    <strong id="displayDate">
+                        -
+                    </strong>
+
+                </div>
+
+
+                <div class="detail-row">
+
+                    <span>
+                        Status
+                    </span>
+
+                    <strong class="active-status">
+                        ✓ Active
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Confirmation Message -->
+
+            <div class="confirmation">
+
+                <div class="confirmation-tick">
+                    ✓
+                </div>
+
+
+                <div>
+
+                    <h3>
+                        Registration Complete
+                    </h3>
+
+                    <p>
+                        We have received your details successfully.
+                        Our team will contact you with the next steps.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- Buttons -->
+
+            <div class="success-buttons">
+
+                <a
+                    href="index.html"
+                    class="home-btn"
+                >
+                    Back to Home
+                </a>
+
+
+                <a
+                    href="join.html"
+                    class="join-again-btn"
+                >
+                    Join Again
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- ================= SUCCESS PAGE JAVASCRIPT ================= -->
+
+    <script>
+
+        const data =
+            JSON.parse(
+                localStorage.getItem("registrationData")
+            );
+
+
+        if (data) {
+
+            document.getElementById("memberId").textContent =
+                data.memberId;
+
+            document.getElementById("displayName").textContent =
+                data.name;
+
+            document.getElementById("displayEmail").textContent =
+                data.email;
+
+            document.getElementById("displayPhone").textContent =
+                data.phone;
+
+            document.getElementById("displayCity").textContent =
+                data.city || "Not provided";
+
+            document.getElementById("displayRole").textContent =
+                data.role;
+
+            document.getElementById("displayDate").textContent =
+                data.registrationDate;
+
+        }
+
+    </script>
+
+
+</body>
+
+</html>
+```

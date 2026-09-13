@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Empower</title>
+    <link rel="stylesheet" href="create-account.css">
+</head>
+
+<body>
+
+<header class="navbar">
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            Empower
+        </a>
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="initiatives.html">Initiatives</a>
+            <a href="get-support.html">Get Support</a>
+            <a href="track-case.html">Track Case</a>
+            <a href="contact.html">Contact</a>
+            <a href="login.html" class="login-btn">Login</a>
+        </nav>
+
+    </div>
+</header>
+
+
+<main class="register-page">
+
+    <section class="register-card">
+
+        <div class="register-heading">
+            <span class="eyebrow">JOIN EMPOWER</span>
+
+            <h1>Create your <span>account.</span></h1>
+
+            <p>
+                Create an account to access your support information,
+                track requests and stay connected with Empower.
+            </p>
+        </div>
+
+
+        <form id="registerForm">
+
+            <div class="form-grid">
+
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter your full name"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email Address</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Enter your email"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Enter your phone number"
+                        required
+                    >
+                </div>
+
+                <div class="input-group">
+                    <label for="role">I am joining as</label>
+
+                    <select id="role" required>
+                        <option value="">Select an option</option>
+                        <option value="beneficiary">Seeking Support</option>
+                        <option value="volunteer">Volunteer</option>
+                        <option value="mentor">Mentor</option>
+                        <option value="skill-trainer">Skill Trainer</option>
+                    </select>
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Create a password"
+                        required
+                    >
+                </div>
+
+                <div class="input-group full-width">
+                    <label for="confirmPassword">Confirm Password</label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm your password"
+                        required
+                    >
+                </div>
+
+            </div>
+
+
+            <label class="terms">
+                <input type="checkbox" id="terms" required>
+                <span>
+                    I agree to the terms and understand that my information
+                    will be kept private and used only to provide relevant
+                    services.
+                </span>
+            </label>
+
+
+            <button type="submit" class="create-btn">
+                Create Account
+                <span>→</span>
+            </button>
+
+
+            <p id="registerMessage" class="register-message"></p>
+
+        </form>
+
+
+        <div class="login-link">
+            Already have an account?
+            <a href="login.html">Login here</a>
+        </div>
+
+    </section>
+
+</main>
+
+
+<footer class="footer">
+
+    <div>
+        <h2>Empower</h2>
+
+        <p>
+            Supporting women and children through accessible resources
+            and meaningful action.
+        </p>
+
+        <ul class="sponsor-list">
+            <li>Support</li>
+            <li>Empower</li>
+            <li>Inspire</li>
+        </ul>
+
+        <p class="footer-bottom">
+            © 2026 EmpowerHer. All rights reserved.
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="create-account.js"></script>
+
+</body>
+</html>

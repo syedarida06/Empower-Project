@@ -1,71 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us </title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Contact Us
+    </title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
+
 <body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
     <header>
-    <div class="navbar">
-      <div class="logo">EMPOWER</div>
-      <ul class="navlinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="index.html#contact">Contact</a></li>
-        <li><a href="initiatives.html">Initiatives</a></li>
-        <li><a href="login.html">Log in</a></li>
-      </ul>
-    </div>
-  </header>
 
-  <!-- Header -->
+        <div class="navbar">
 
-  <!-- Contact Section -->
-  <section class="contact-container">
-    
-    <div class="contact-info">
-      <h2>Get in Touch</h2>
-      <p>Email: empower@gmail.com</p>
-      <p>Phone: +91 9876543210</p>
-      <p>Location: Karnataka, India</p>
-    </div>
+            <div class="logo">
+                EMPOWER
+            </div>
 
-    <form class="contact-form">
-      <h1>CONTACT US</h1>
-      <br>
-      <h2>Send Message</h2>
-      
-      <input type="text" placeholder="Your Name" required>
-      <input type="number" placeholder="Your contact number" required>
-      <input type="email" placeholder="Your Email" required>
-      
-      <textarea placeholder="Your Message" rows="5" required></textarea>
-      
-      <button type="submit">Send</button>
-    </form>
 
-  </section>
+          
+<ul class="navlinks" id="navlinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="initiatives.html">Initiatives</a></li>
+    <li><a href="get-support.html">Get Support</a></li>
+    <li><a href="track-case.html">Track Case</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html">Log In</a></li>
+</ul>
 
-  <footer class="footer">
-    <div class="footer-content">
-        <h2>CHANGE MAKERS WHO STAND WITH US</h2>
-        <p>We extend our heartfelt gratitude to all our sponsors who make our mission possible.</p>
-        
-        <ul class="sponsor-list">
-            <li>ABC Foundation</li>
-            <li>XYZ Trust</li>
-            <li>Global Care Initiative</li>
-            <li>Community Builders</li>
-        </ul>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Empower NGO | Designed with care by Syeda</p>
-            <p>email - empower@gmail.com</p>
+
+
         </div>
-    </div>
-</footer>
-    
+
+    </header>
+
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+
+    <section class="contact-container">
+
+
+        <div class="contact-info">
+
+            <h2>
+                Get in Touch
+            </h2>
+
+            <p>
+                Email: empower@gmail.com
+            </p>
+
+            <p>
+                Phone: +91 9876543210
+            </p>
+
+            <p>
+                Location: Karnataka, India
+            </p>
+
+        </div>
+
+
+
+        <!-- CONTACT FORM -->
+
+        <form
+            class="contact-form"
+            id="contactForm"
+        >
+
+            <h1>
+                CONTACT US
+            </h1>
+
+            <br>
+
+            <h2>
+                Send Message
+            </h2>
+
+
+            <input
+                type="text"
+                id="contactName"
+                placeholder="Your Name"
+                required
+            >
+
+
+            <input
+                type="tel"
+                id="contactPhone"
+                placeholder="Your contact number"
+                required
+            >
+
+
+            <input
+                type="email"
+                id="contactEmail"
+                placeholder="Your Email"
+                required
+            >
+
+
+            <textarea
+                id="contactMessage"
+                placeholder="Your Message"
+                rows="5"
+                required
+            ></textarea>
+
+
+            <button type="submit">
+                Send
+            </button>
+
+        </form>
+
+    </section>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>
+                CHANGE MAKERS WHO STAND WITH US
+            </h2>
+
+            <p>
+                We extend our heartfelt gratitude to all our sponsors
+                who make our mission possible.
+            </p>
+
+
+            <ul class="sponsor-list">
+
+                <li>
+                    ABC Foundation
+                </li>
+
+                <li>
+                    XYZ Trust
+                </li>
+
+                <li>
+                    Global Care Initiative
+                </li>
+
+                <li>
+                    Community Builders
+                </li>
+
+            </ul>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Empower NGO | Designed with care by Syeda
+                </p>
+
+                <p>
+                    email - empower@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= CONTACT FORM JAVASCRIPT ================= -->
+
+    <script>
+
+        const contactForm =
+            document.getElementById("contactForm");
+
+
+        contactForm.addEventListener(
+            "submit",
+            function(event) {
+
+                event.preventDefault();
+
+
+                const name =
+                    document.getElementById("contactName").value.trim();
+
+                const phone =
+                    document.getElementById("contactPhone").value.trim();
+
+                const email =
+                    document.getElementById("contactEmail").value.trim();
+
+                const message =
+                    document.getElementById("contactMessage").value.trim();
+
+
+                const referenceId =
+                    "EMP-CON-" +
+                    new Date().getFullYear() +
+                    "-" +
+                    Math.floor(10000 + Math.random() * 90000);
+
+
+                const contactData = {
+
+                    name: name,
+                    phone: phone,
+                    email: email,
+                    message: message,
+                    referenceId: referenceId,
+                    sentDate:
+                        new Date().toLocaleDateString("en-GB")
+
+                };
+
+
+                localStorage.setItem(
+                    "contactData",
+                    JSON.stringify(contactData)
+                );
+
+
+                window.location.href =
+                    "message-sent.html";
+
+            }
+        );
+
+    </script>
+
+
 </body>
+
 </html>
+```

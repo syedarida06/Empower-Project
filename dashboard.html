@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Dashboard | Empower</title>
+
+    <link rel="stylesheet"
+          href="dashboard.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html"
+               class="logo">
+
+                Empower
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="initiatives.html">
+                    Initiatives
+                </a>
+
+                <a href="get-support.html">
+                    Get Support
+                </a>
+
+                <a href="track-case.html">
+                    Track Case
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="login.html">
+
+                    Dashboard
+
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= DASHBOARD ================= -->
+
+    <main>
+
+
+        <!-- ================= HERO ================= -->
+
+        <section class="dashboard-hero">
+
+            <div class="hero-inner">
+
+
+                <div>
+
+                    <span class="eyebrow">
+                        MY DASHBOARD
+                    </span>
+
+
+                    <h1>
+                        Welcome back,
+                        <span id="dashboardName">
+                            User.
+                        </span>
+                    </h1>
+
+
+                    <p>
+                        Manage your support requests, follow your
+                        progress, and discover resources available to you.
+                    </p>
+
+                </div>
+
+
+                <a href="get-support.html"
+                   class="primary-btn">
+
+                    Request Support
+                    <span>→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- ================= CONTENT ================= -->
+
+        <section class="dashboard-container">
+
+
+            <!-- ================= STATS ================= -->
+
+            <div class="dashboard-stats">
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        01
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Active Request
+                        </span>
+
+                        <strong id="activeRequests">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ✓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Resolved Requests
+                        </span>
+
+                        <strong>
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="stat-card">
+
+                    <div class="stat-icon">
+                        ID
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Current Case
+                        </span>
+
+                        <strong id="currentCaseId">
+                            —
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ================= MAIN GRID ================= -->
+
+            <div class="dashboard-grid">
+
+
+                <!-- ================= CURRENT CASE ================= -->
+
+                <section class="dashboard-card current-case">
+
+
+                    <div class="card-heading">
+
+
+                        <div>
+
+                            <span class="section-label">
+                                CURRENT SUPPORT CASE
+                            </span>
+
+
+                            <h2 id="caseTitle">
+                                No active request
+                            </h2>
+
+                        </div>
+
+
+                        <span class="status-badge"
+                              id="caseStatus">
+
+                            —
+
+                        </span>
+
+                    </div>
+
+
+
+                    <div class="case-details">
+
+
+                        <div>
+
+                            <span>
+                                Case ID
+                            </span>
+
+                            <strong id="caseId">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <span>
+                                Category
+                            </span>
+
+                            <strong id="caseCategory">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <span>
+                                Submitted
+                            </span>
+
+                            <strong id="caseDate">
+                                —
+                            </strong>
+
+                        </div>
+
+
+
+                        <div>
+
+                            <span>
+                                Priority
+                            </span>
+
+                            <strong id="casePriority">
+                                —
+                            </strong>
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- CASE DESCRIPTION -->
+
+                    <div class="case-description"
+                         id="caseDescriptionBox"
+                         style="display:none;">
+
+                        <span>
+                            Your request
+                        </span>
+
+                        <p id="caseDescription">
+                        </p>
+
+                    </div>
+
+
+
+                    <!-- PROGRESS -->
+
+                    <div class="progress-area">
+
+
+                        <div class="progress-header">
+
+                            <strong>
+                                Support progress
+                            </strong>
+
+                            <span id="progressText">
+                                2 of 5 steps
+                            </span>
+
+                        </div>
+
+
+                        <div class="progress-bar">
+
+                            <div class="progress-fill"
+                                 id="progressFill">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- ACTIONS -->
+
+                    <div class="case-actions">
+
+                        <a href="track-case.html"
+                           class="primary-btn">
+
+                            Track Case →
+
+                        </a>
+
+
+                        <a href="contact.html"
+                           class="secondary-btn">
+
+                            Need Help?
+
+                        </a>
+
+                    </div>
+
+
+                </section>
+
+
+
+                <!-- ================= SUPPORT PLAN ================= -->
+
+                <section class="dashboard-card support-plan">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <span class="section-label">
+                                YOUR SUPPORT PLAN
+                            </span>
+
+                            <h2>
+                                What happens next?
+                            </h2>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="plan-list">
+
+
+                        <div class="plan-item completed">
+
+                            <div class="plan-number">
+                                ✓
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Request submitted
+                                </strong>
+
+                                <p>
+                                    Your support request was received.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="plan-item current">
+
+                            <div class="plan-number">
+                                2
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Request under review
+                                </strong>
+
+                                <p>
+                                    Our team is reviewing your request.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="plan-item">
+
+                            <div class="plan-number">
+                                3
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Support assigned
+                                </strong>
+
+                                <p>
+                                    A suitable resource will be identified.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="plan-item">
+
+                            <div class="plan-number">
+                                4
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Support in progress
+                                </strong>
+
+                                <p>
+                                    Your request will be actively addressed.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="plan-item">
+
+                            <div class="plan-number">
+                                5
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Resolution
+                                </strong>
+
+                                <p>
+                                    Your support journey reaches completion.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </section>
+
+
+            </div>
+
+
+
+            <!-- ================= QUICK ACTIONS ================= -->
+
+            <section class="quick-section">
+
+
+                <div class="section-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            QUICK ACTIONS
+                        </span>
+
+                        <h2>
+                            How can we help?
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+
+                <div class="action-grid">
+
+
+                    <a href="get-support.html"
+                       class="action-card">
+
+                        <div class="action-icon">
+                            +
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Get Support
+                            </h3>
+
+                            <p>
+                                Submit a new request and tell us how we can help.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="track-case.html"
+                       class="action-card">
+
+                        <div class="action-icon">
+                            ✓
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Track a Case
+                            </h3>
+
+                            <p>
+                                Check the latest progress of your support request.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="initiatives.html"
+                       class="action-card">
+
+                        <div class="action-icon">
+                            ◎
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Explore Resources
+                            </h3>
+
+                            <p>
+                                Discover initiatives, programs and useful resources.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+
+                    <a href="contact.html"
+                       class="action-card">
+
+                        <div class="action-icon">
+                            ?
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Contact Support
+                            </h3>
+
+                            <p>
+                                Have another question? Get in touch with our team.
+                            </p>
+
+                        </div>
+
+                        <span class="arrow">
+                            →
+                        </span>
+
+                    </a>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= REQUEST HISTORY ================= -->
+
+            <section class="dashboard-card requests-card">
+
+
+                <div class="section-heading request-heading">
+
+                    <div>
+
+                        <span class="section-label">
+                            REQUEST HISTORY
+                        </span>
+
+                        <h2>
+                            My previous requests
+                        </h2>
+
+                    </div>
+
+
+                    <a href="track-case.html"
+                       class="view-link">
+
+                        Track a case →
+
+                    </a>
+
+                </div>
+
+
+
+                <div class="request-table">
+
+
+                    <div class="request-row request-header">
+
+                        <span>
+                            Case ID
+                        </span>
+
+                        <span>
+                            Category
+                        </span>
+
+                        <span>
+                            Date
+                        </span>
+
+                        <span>
+                            Status
+                        </span>
+
+                    </div>
+
+
+
+                    <div id="requestHistory">
+
+                        <div class="request-row">
+
+                            <strong>
+                                —
+                            </strong>
+
+                            <span>
+                                No requests yet
+                            </span>
+
+                            <span>
+                                —
+                            </span>
+
+                            <span class="table-status reviewing">
+                                —
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </section>
+
+
+
+            <!-- ================= RESOURCE BANNER ================= -->
+
+            <section class="resource-banner">
+
+
+                <div>
+
+                    <span class="section-label">
+                        KEEP EXPLORING
+                    </span>
+
+
+                    <h2>
+                        You don't have to navigate everything alone.
+                    </h2>
+
+
+                    <p>
+                        Explore initiatives and resources designed to support
+                        women, children and families.
+                    </p>
+
+                </div>
+
+
+                <a href="initiatives.html"
+                   class="light-btn">
+
+                    Explore Initiatives →
+
+                </a>
+
+            </section>
+
+
+        </section>
+
+    </main>
+
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <h2>
+            Empower
+        </h2>
+
+        <p>
+            Supporting women and children through accessible resources
+            and meaningful action.
+        </p>
+
+        <div class="footer-bottom">
+
+            © 2026 EmpowerHer. All rights reserved.
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- ================= DASHBOARD JAVASCRIPT ================= -->
+
+    <script src="dashboard.js"></script>
+
+
+</body>
+
+</html>

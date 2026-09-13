@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Support | Women & Child Development</title>
+
+    <link rel="stylesheet" href="support.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                
+                <span>Empower<span class="logo-highlight"></span></span>
+            </a>
+
+            <nav class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="initiatives.html">Initiatives</a>
+
+                <a href="get-support.html" class="active">
+                    Get Support
+                </a>
+
+                <a href="track-case.html">
+                    Track Case
+                </a>
+
+                <a href="contact.html">Contact</a>
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="support-hero">
+
+        <div class="hero-content">
+
+            <span class="eyebrow">
+                CONFIDENTIAL SUPPORT
+            </span>
+
+            <h1>
+                You don't have to
+                <span>face it alone.</span>
+            </h1>
+
+            <p>
+                Tell us what you need help with. Your request will be
+                reviewed and assigned a unique Case ID so you can
+                follow its progress.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN FORM ================= -->
+
+    <main class="support-container">
+
+        <div class="form-intro">
+            <div>
+                <span class="section-label">REQUEST SUPPORT</span>
+                <h2>Tell us how we can help</h2>
+                <p>
+                    Please provide accurate information so that we can
+                    understand your situation and connect you with the
+                    right support.
+                </p>
+            </div>
+
+            <div class="confidential-badge">
+                <span class="lock-icon">🔒</span>
+                <div>
+                    <strong>Your information is private</strong>
+                    <small>Used only to process your request.</small>
+                </div>
+            </div>
+        </div>
+
+
+        <form id="supportForm" class="support-form">
+
+
+            <!-- ================= PERSONAL DETAILS ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+                    <div class="step-number">01</div>
+
+                    <div>
+                        <h3>Personal Details</h3>
+                        <p>Tell us a little about yourself.</p>
+                    </div>
+                </div>
+
+
+                <div class="form-grid">
+
+                    <div class="input-group full-width">
+                        <label for="fullName">
+                            Full Name <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="fullName"
+                            name="fullName"
+                            placeholder="Enter your full name"
+                            required
+                        >
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="age">
+                            Age <span>*</span>
+                        </label>
+
+                        <input
+                            type="number"
+                            id="age"
+                            name="age"
+                            min="1"
+                            max="100"
+                            placeholder="Enter your age"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="phone">
+                            Phone Number <span>*</span>
+                        </label>
+
+                        <input
+                            type="tel"
+                            id="phone"
+                            name="phone"
+                            placeholder="Enter your phone number"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="example@email.com"
+                        >
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="location">
+                            City / Location <span>*</span>
+                        </label>
+
+                        <input
+                            type="text"
+                            id="location"
+                            name="location"
+                            placeholder="Enter your city or location"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="input-group full-width">
+
+                        <label>
+                            Preferred Contact Method <span>*</span>
+                        </label>
+
+                        <div class="radio-options">
+
+                            <label class="radio-card">
+                                <input
+                                    type="radio"
+                                    name="contactMethod"
+                                    value="phone"
+                                    required
+                                >
+                                <span>📞</span>
+                                <div>
+                                    <strong>Phone</strong>
+                                    <small>Call me</small>
+                                </div>
+                            </label>
+
+
+                            <label class="radio-card">
+                                <input
+                                    type="radio"
+                                    name="contactMethod"
+                                    value="email"
+                                >
+                                <span>✉️</span>
+                                <div>
+                                    <strong>Email</strong>
+                                    <small>Email me</small>
+                                </div>
+                            </label>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= SUPPORT DETAILS ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <div class="step-number">02</div>
+
+                    <div>
+                        <h3>About Your Need</h3>
+                        <p>Help us understand what kind of support you need.</p>
+                    </div>
+
+                </div>
+
+
+                <div class="form-grid">
+
+
+                    <div class="input-group">
+
+                        <label for="category">
+                            Support Category <span>*</span>
+                        </label>
+
+                        <select id="category" name="category" required>
+
+                            <option value="">
+                                Select a category
+                            </option>
+
+                            <option value="education">
+                                Education Support
+                            </option>
+
+                            <option value="financial">
+                                Financial Assistance
+                            </option>
+
+                            <option value="child">
+                                Child Development
+                            </option>
+
+                            <option value="legal">
+                                Legal Guidance
+                            </option>
+
+                            <option value="employment">
+                                Employment Support
+                            </option>
+
+                            <option value="family">
+                                Family / Community Support
+                            </option>
+
+                            <option value="other">
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group">
+
+                        <label for="priority">
+                            Priority Level <span>*</span>
+                        </label>
+
+                        <select id="priority" name="priority" required>
+
+                            <option value="">
+                                Select priority
+                            </option>
+
+                            <option value="normal">
+                                Normal
+                            </option>
+
+                            <option value="important">
+                                Important
+                            </option>
+
+                            <option value="urgent">
+                                Urgent
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="input-group full-width">
+
+                        <label for="description">
+                            Describe Your Situation <span>*</span>
+                        </label>
+
+                        <textarea
+                            id="description"
+                            name="description"
+                            rows="7"
+                            maxlength="1000"
+                            placeholder="Please describe your situation or the kind of support you are looking for..."
+                            required
+                        ></textarea>
+
+                        <div class="textarea-footer">
+                            <small>
+                                Please avoid sharing passwords, financial
+                                credentials or other highly sensitive information.
+                            </small>
+
+                            <span id="charCount">0 / 1000</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="input-group full-width">
+
+                        <label for="helpNeeded">
+                            What kind of help would you prefer?
+                        </label>
+
+                        <textarea
+                            id="helpNeeded"
+                            name="helpNeeded"
+                            rows="4"
+                            placeholder="For example: guidance, resources, someone to contact, financial assistance..."
+                        ></textarea>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- ================= ADDITIONAL INFORMATION ================= -->
+
+            <section class="form-section">
+
+                <div class="form-section-heading">
+
+                    <div class="step-number">03</div>
+
+                    <div>
+                        <h3>Additional Information</h3>
+                        <p>Anything else you would like us to know?</p>
+                    </div>
+
+                </div>
+
+
+                <div class="additional-box">
+
+                    <div class="info-icon">
+                        ℹ
+                    </div>
+
+                    <div>
+                        <strong>How your request works</strong>
+
+                        <p>
+                            After submitting this form, you will receive a
+                            unique Case ID. Our support team can use this
+                            ID to review and manage your request.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <label class="consent-box">
+
+                    <input
+                        type="checkbox"
+                        id="consent"
+                        required
+                    >
+
+                    <span class="custom-check"></span>
+
+                    <p>
+                        I confirm that the information provided is accurate
+                        to the best of my knowledge and I agree that it may
+                        be used to process my support request.
+                    </p>
+
+                </label>
+
+            </section>
+
+
+            <!-- ================= SUBMIT ================= -->
+
+            <div class="submit-area">
+
+                <button type="submit" class="submit-btn">
+                    Submit Support Request
+                    <span>→</span>
+                </button>
+
+                <p>
+                    By submitting this request, you will receive a
+                    Case ID for future tracking.
+                </p>
+
+            </div>
+
+        </form>
+
+
+        <!-- ================= SUCCESS MESSAGE ================= -->
+
+        <div id="successCard" class="success-card hidden">
+
+            <div class="success-icon">
+                ✓
+            </div>
+
+            <span class="success-label">
+                REQUEST SUBMITTED
+            </span>
+
+            <h2>Your request has been registered</h2>
+
+            <p>
+                Thank you for reaching out. Please save your Case ID.
+                You can use it to track the progress of your request.
+            </p>
+
+            <div class="case-id-box">
+
+                <small>YOUR CASE ID</small>
+
+                <strong id="generatedCaseId">
+                    WCD-0000
+                </strong>
+
+            </div>
+
+            <a href="track-case.html" class="track-btn">
+                Track My Case →
+            </a>
+
+        </div>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+                <strong>EmpowerHer</strong>
+                <p>
+                    Supporting women and children through
+                    accessible resources and meaningful action.
+                </p>
+            </div>
+
+            <p class="copyright">
+                © 2026 EmpowerHer. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+    /* =========================
+       CHARACTER COUNTER
+    ========================= */
+
+    const description = document.getElementById("description");
+    const charCount = document.getElementById("charCount");
+
+    description.addEventListener("input", function () {
+
+        charCount.textContent =
+            `${description.value.length} / 1000`;
+
+    });
+
+
+    /* =========================
+       SUPPORT FORM
+    ========================= */
+
+    const supportForm =
+        document.getElementById("supportForm");
+
+    const successCard =
+        document.getElementById("successCard");
+
+    const generatedCaseId =
+        document.getElementById("generatedCaseId");
+
+
+    supportForm.addEventListener("submit", function (event) {
+
+        event.preventDefault();
+
+
+        /* =========================
+           GENERATE CASE ID
+        ========================= */
+
+        const randomNumber =
+            Math.floor(1000 + Math.random() * 9000);
+
+        const caseId =
+            "WCD-" + randomNumber;
+
+
+        generatedCaseId.textContent = caseId;
+
+
+        /* =========================
+           GET FORM DATA
+        ========================= */
+
+        const caseData = {
+
+            caseId: caseId,
+
+            name:
+                document.getElementById("fullName").value.trim(),
+
+            age:
+                document.getElementById("age").value.trim(),
+
+            phone:
+                document.getElementById("phone").value.trim(),
+
+            email:
+                document.getElementById("email").value.trim(),
+
+            location:
+                document.getElementById("location").value.trim(),
+
+            contactMethod:
+                document.querySelector(
+                    'input[name="contactMethod"]:checked'
+                ).value,
+
+            category:
+                document.getElementById("category").value,
+
+            priority:
+                document.getElementById("priority").value,
+
+            description:
+                document.getElementById("description").value.trim(),
+
+            helpNeeded:
+                document.getElementById("helpNeeded").value.trim(),
+
+            status:
+                "Under Review",
+
+            submittedDate:
+                new Date().toLocaleDateString("en-IN", {
+                    day: "2-digit",
+                    month: "short",
+                    year: "numeric"
+                })
+
+        };
+
+
+        /* =========================
+           SAVE CASE
+        ========================= */
+
+        localStorage.setItem(
+            "supportCase",
+            JSON.stringify(caseData)
+        );
+
+
+        /* =========================
+           ALSO CONNECT CASE
+           TO CURRENT USER
+        ========================= */
+
+        const currentUser =
+            JSON.parse(
+                localStorage.getItem("currentUser")
+            );
+
+
+        if (currentUser) {
+
+            currentUser.caseId = caseId;
+
+            localStorage.setItem(
+                "currentUser",
+                JSON.stringify(currentUser)
+            );
+
+        }
+
+
+        /* =========================
+           SHOW SUCCESS CARD
+        ========================= */
+
+        supportForm.classList.add("hidden");
+
+        successCard.classList.remove("hidden");
+
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+</script>
+
+</body>
+</html>

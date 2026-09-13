@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Track Case | Empower</title>
+
+    <link rel="stylesheet" href="support.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+
+    
+
+                <span>
+                    Empower<span class="logo-highlight"></span>
+                </span>
+
+            </a>
+
+
+            <nav class="nav-links">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="initiatives.html">
+                    Initiatives
+                </a>
+
+                <a href="get-support.html">
+                    Get Support
+                </a>
+
+                <a href="track-case.html" class="active">
+                    Track Case
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+                <a href="login.html" class="login-btn">
+                    Login
+                </a>
+
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <section class="track-hero">
+
+        <div class="track-hero-content">
+
+            <span class="eyebrow">
+                CASE TRACKING
+            </span>
+
+            <h1>
+                Track your
+                <span>support request.</span>
+            </h1>
+
+            <p>
+                Enter your Case ID to check the current status
+                and progress of your request.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= TRACK SECTION ================= -->
+
+    <main class="track-container">
+
+
+        <section class="track-card">
+
+
+            <div class="track-icon">
+                ✓
+            </div>
+
+
+            <h2>
+                Where does your request stand?
+            </h2>
+
+            <p>
+                Enter the Case ID you received after submitting
+                your support request.
+            </p>
+
+
+            <form id="trackForm" class="track-form">
+
+
+                <div class="input-group">
+
+                    <label for="caseId">
+                        Case ID
+                    </label>
+
+                    <input
+                        type="text"
+                        id="caseId"
+                        placeholder="Example: WCD-1047"
+                        required
+                    >
+
+                </div>
+
+
+                <button
+                    type="submit"
+                    class="submit-btn track-submit"
+                >
+                    Track Case
+                    <span>→</span>
+                </button>
+
+
+            </form>
+
+
+            <div id="trackError" class="track-error hidden">
+                No case found. Please check your Case ID and try again.
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= CASE RESULT ================= -->
+
+        <section
+            id="caseResult"
+            class="case-result hidden"
+        >
+
+
+            <div class="case-header">
+
+                <div>
+
+                    <span class="section-label">
+                        SUPPORT CASE
+                    </span>
+
+                    <h2 id="displayCaseId">
+                        WCD-0000
+                    </h2>
+
+                </div>
+
+
+                <span
+                    id="statusBadge"
+                    class="status-badge"
+                >
+                    Under Review
+                </span>
+
+            </div>
+
+
+            <!-- CASE INFORMATION -->
+
+            <div class="case-information">
+
+
+                <div class="case-info">
+
+                    <span>
+                        Requester
+                    </span>
+
+                    <strong id="displayName">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="case-info">
+
+                    <span>
+                        Category
+                    </span>
+
+                    <strong id="displayCategory">
+                        —
+                    </strong>
+
+                </div>
+
+
+                <div class="case-info">
+
+                    <span>
+                        Priority
+                    </span>
+
+                    <strong id="displayPriority">
+                        —
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ================= TIMELINE ================= -->
+
+            <div class="timeline-section">
+
+                <h3>
+                    Case Progress
+                </h3>
+
+
+                <div class="timeline">
+
+
+                    <div class="timeline-item completed">
+
+                        <div class="timeline-dot">
+                            ✓
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <strong>
+                                Request Submitted
+                            </strong>
+
+                            <p>
+                                Your support request has been
+                                successfully received.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-line"></div>
+
+
+                    <div class="timeline-item current">
+
+                        <div class="timeline-dot">
+                            2
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <strong>
+                                Under Review
+                            </strong>
+
+                            <p>
+                                Our support team is reviewing
+                                your request.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-line"></div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            3
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <strong>
+                                Support Assigned
+                            </strong>
+
+                            <p>
+                                A suitable support person or
+                                resource will be assigned.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-line"></div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            4
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <strong>
+                                In Progress
+                            </strong>
+
+                            <p>
+                                Your request is actively
+                                being addressed.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="timeline-line"></div>
+
+
+                    <div class="timeline-item">
+
+                        <div class="timeline-dot">
+                            5
+                        </div>
+
+                        <div class="timeline-content">
+
+                            <strong>
+                                Resolved
+                            </strong>
+
+                            <p>
+                                Your support request has
+                                been successfully resolved.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= HELP BOX ================= -->
+
+            <div class="need-help">
+
+                <div class="need-help-icon">
+                    ?
+                </div>
+
+                <div>
+
+                    <strong>
+                        Need additional help?
+                    </strong>
+
+                    <p>
+                        If you need to provide additional
+                        information about your request,
+                        please contact our support team.
+                    </p>
+
+                </div>
+
+                <a href="contact.html">
+                    Contact Us →
+                </a>
+
+            </div>
+
+
+        </section>
+
+
+        <!-- ================= INFO CARDS ================= -->
+
+        <section class="tracking-info">
+
+
+            <div class="info-card">
+
+                <span class="info-card-icon">
+                    🔐
+                </span>
+
+                <h3>
+                    Private & Confidential
+                </h3>
+
+                <p>
+                    Your case details are not displayed
+                    publicly.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-card-icon">
+                    🆔
+                </span>
+
+                <h3>
+                    Unique Case ID
+                </h3>
+
+                <p>
+                    Every support request receives
+                    its own tracking ID.
+                </p>
+
+            </div>
+
+
+            <div class="info-card">
+
+                <span class="info-card-icon">
+                    📊
+                </span>
+
+                <h3>
+                    Track Progress
+                </h3>
+
+                <p>
+                    Follow the progress of your request
+                    from submission to resolution.
+                </p>
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <div>
+
+                <strong>
+                    Empower
+                </strong>
+
+                <p>
+                    Supporting women and children through
+                    accessible resources and meaningful action.
+                </p>
+
+            </div>
+
+
+            <p class="copyright">
+                © 2026 EmpowerHer. All rights reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script>
+
+
+        const trackForm =
+            document.getElementById("trackForm");
+
+        const caseResult =
+            document.getElementById("caseResult");
+
+        const trackError =
+            document.getElementById("trackError");
+
+
+        trackForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+
+            const enteredId =
+                document
+                .getElementById("caseId")
+                .value
+                .trim()
+                .toUpperCase();
+
+
+            const savedCase =
+                JSON.parse(
+                    localStorage.getItem("supportCase")
+                );
+
+
+            if (
+                savedCase &&
+                enteredId === savedCase.caseId
+            ) {
+
+
+                document.getElementById(
+                    "displayCaseId"
+                ).textContent =
+                    savedCase.caseId;
+
+
+                document.getElementById(
+                    "displayName"
+                ).textContent =
+                    savedCase.name;
+
+
+                document.getElementById(
+                    "displayCategory"
+                ).textContent =
+                    savedCase.category;
+
+
+                document.getElementById(
+                    "displayPriority"
+                ).textContent =
+                    savedCase.priority;
+
+
+                caseResult.classList.remove("hidden");
+
+                trackError.classList.add("hidden");
+
+
+                caseResult.scrollIntoView({
+                    behavior: "smooth"
+                });
+
+            }
+
+            else {
+
+                caseResult.classList.add("hidden");
+
+                trackError.classList.remove("hidden");
+
+            }
+
+        });
+
+    </script>
+
+
+</body>
+</html>

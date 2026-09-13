@@ -1,3 +1,7 @@
+/* =========================================================
+   YOUR EXISTING CSS — NO DESKTOP CHANGES
+   ========================================================= */
+
 *{
     margin: 0;
     font-family: Arial ;
@@ -59,7 +63,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: whitesmoke;   /* change to white for readability */
+    color: whitesmoke;
     padding: 0 20px;
 }
 .hero-content h1 {
@@ -92,18 +96,18 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 50px;          /* spacing between boxes */
-    flex-wrap: wrap;    /* wrap on smaller screens */
+    gap: 50px;
+    flex-wrap: wrap;
     margin: 8px;
     background-color: white;
     
 }
 
 .container div {
-    width: 300px;       /* fixed width for all boxes */
-    height: 200px;      /* fixed height for all boxes */
-    overflow: hidden;   /* hides overflow if image is larger */
-    border-radius: 8px; /* optional rounded corners */
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 .container img:hover{
@@ -113,19 +117,17 @@
 .container img {
     width: 100%;
     height: 100%;
-    object-fit: cover;  /* crops image to fill box uniformly */
+    object-fit: cover;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Full-width section */
 .about {
-    background: #f9f9f9;          /* light background */
-    padding: 10px 10px;          /* more vertical space */
-    width: 100%;                  /* full screen width */
+    background: #f9f9f9;
+    padding: 10px 10px;
+    width: 100%;
     display: block;
 }
 
-/* Container */
 .about.container {
     width: 100%;
     margin: 0 auto;
@@ -134,19 +136,17 @@
     align-items: center;
 }
 
-/* Text block */
 .about.text {
     width: 100%;
     max-width: 1000px;
     text-align: center;
     background: #fff;
-    padding: 60px;                /* increased padding for taller box */
+    padding: 60px;
     box-shadow: 0 6px 15px rgba(0,0,0,0.15);
     border-radius: 10px;
-    min-height: 300px;            /* ensures box looks longer */
+    min-height: 300px;
 }
 
-/* Heading */
 .about.text h2 {
     font-size: 3rem;
     color: #333;
@@ -155,7 +155,6 @@
     letter-spacing: 2px;
 }
 
-/* Paragraph */
 .about.text p {
     font-size: 1.2rem;
     line-height: 1.6;
@@ -174,8 +173,8 @@
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 images per row */
-  gap: 15px; /* spacing between images */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
   margin-top: 20px;
   font-size: larger;
   font-weight: 600;
@@ -184,9 +183,9 @@
 
 .image-grid img {
   width: 100%;
-  height: 220px; /* fixed height for consistency */
-  object-fit: cover; /* crops to fit without distortion */
-  border-radius: 20px; /* optional styling */
+  height: 220px;
+  object-fit: cover;
+  border-radius: 20px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   
 }
@@ -196,17 +195,17 @@
 }
 
 .r {
-    background: #e6e0e0;   /* soft background */
-    padding: 3rem 1rem;    /* spacing around section */
+    background: #e6e0e0;
+    padding: 3rem 1rem;
 }
 
 .r .p {
     width: 90%;
     margin: 0 auto;
-    background: #f5f1f1;      /* light contrasting box */
+    background: #f5f1f1;
     padding: 2rem;
-    border-radius: 10px;   /* rounded corners */
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* subtle shadow */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
 .r .p h1 {
@@ -219,7 +218,7 @@
 }
 
 .r .p ul {
-    list-style: none; /* remove default bullets */
+    list-style: none;
     padding: 0;
     margin: 0;
 }
@@ -235,10 +234,10 @@
 }
 
 .r .p li::before {
-    content: "•"; /* custom bullet */
+    content: "•";
     position: absolute;
     left: 0;
-    color: #ff4081; /* accent color */
+    color: #ff4081;
     font-weight: bold;
 }
 
@@ -249,7 +248,7 @@
 }
 
 .testimonial {
-    background: #f9f9f9; /* soft background for contrast */
+    background: #f9f9f9;
     padding: 40px;
     border-radius: 10px;
     max-width: 900px;
@@ -272,7 +271,7 @@
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 5px solid #ff4081; /* accent color */
+    border-left: 5px solid #ff4081;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-size: 1rem;
@@ -281,7 +280,7 @@
 }
 
 .testimonial {
-    background: #e7e6e6; /* soft background for contrast */
+    background: #e7e6e6;
     padding: 40px;
     border-radius: 10px;
     max-width: 900px;
@@ -297,13 +296,14 @@
     letter-spacing: 2px;
     font-weight: bold;
 }
+
 .testimonial .t1,
 .testimonial .t2,
 .testimonial .t3 {
     background: #fff;
     padding: 20px;
     margin-bottom: 20px;
-    border-left: 5px solid #ff4081; /* accent color */
+    border-left: 5px solid #ff4081;
     border-radius: 6px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
     font-size: 1.2rem;
@@ -316,11 +316,11 @@
 }
 
 .testimonial .t2 {
-    border-left-color: #3f51b5; /* different accent */
+    border-left-color: #3f51b5;
 }
 
 .testimonial .t3 {
-    border-left-color: #4caf50; /* another accent */
+    border-left-color: #4caf50;
 }
 
 .footer {
@@ -334,7 +334,7 @@
 .footer h2 {
     font-size: 1.8rem;
     margin-bottom: 15px;
-    color: #ff4081; /* accent color */
+    color: #ff4081;
 }
 
 .footer p {
@@ -361,8 +361,6 @@
     font-size: 0.9rem;
     color: #aaa;
 }
-
-
 
 
 .about-page,
@@ -464,8 +462,6 @@
   margin: 40px auto;
   font-family: Arial, sans-serif;
 }
-
-
 
 .contact-info {
   flex: 1;
@@ -600,8 +596,6 @@ summary::-webkit-details-marker{
     align-items:center;
 }
 
-
-
 .login-box{
     width:380px;
     background:white;
@@ -681,8 +675,6 @@ summary::-webkit-details-marker{
 
 /* ================= JOIN PAGE ================= */
 
-/* ================= JOIN BANNER ================= */
-
 .join-header{
     background: linear-gradient(to right, #f8f3eb, #efe1cb);
     text-align: center;
@@ -704,8 +696,6 @@ summary::-webkit-details-marker{
     font-size: 20px;
     line-height: 1.8;
 }
-
-/* Form Section */
 
 .join-container{
     width: 700px;
@@ -787,12 +777,89 @@ summary::-webkit-details-marker{
 }
 
 
-/* ================= RESPONSIVE DESIGN ================= */
+/* =========================================================
+   RESPONSIVENESS ONLY
+   ========================================================= */
 
-/* Tablets and Mobile Devices */
+/* ================= TABLETS ================= */
+
+@media (max-width: 1024px){
+
+    .navbar{
+        padding: 18px;
+    }
+
+    .navlinks{
+        gap: 30px;
+    }
+
+    .hero-content h1{
+        font-size: 2.6rem;
+    }
+
+    .container{
+        gap: 25px;
+    }
+
+    .container div{
+        width: 280px;
+    }
+
+    .about.text{
+        width: 92%;
+        padding: 45px;
+    }
+
+    .image-grid{
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 15px;
+    }
+
+    .r .p{
+        width: 92%;
+    }
+
+    .testimonial{
+        width: 92%;
+    }
+
+    .work-cards{
+        gap: 20px;
+    }
+
+    .work-card{
+        width: 270px;
+    }
+
+    .gallery{
+        gap: 15px;
+    }
+
+    .gallery img{
+        width: 280px;
+    }
+
+    .contact-container{
+        width: 92%;
+        gap: 25px;
+        padding: 30px;
+    }
+
+    .campaign{
+        gap: 25px;
+        margin: 40px 20px;
+    }
+
+    .join-header p{
+        width: 80%;
+    }
+
+}
+
+
+/* ================= TABLETS / MOBILE ================= */
+
 @media (max-width: 768px){
-
-    /* Navbar */
 
     .navbar{
         flex-direction: column;
@@ -814,16 +881,24 @@ summary::-webkit-details-marker{
     }
 
     .button{
-        margin-top:10px;
+        margin-top: 10px;
+    }
+
+    .button button{
+        padding: 8px 15px;
     }
 
 
-    /* Hero Section */
+    /* Hero */
 
     .hero{
         height: auto;
         min-height: 80vh;
         padding: 60px 20px;
+    }
+
+    .hero-content{
+        width: 100%;
     }
 
     .hero-content h1{
@@ -832,11 +907,11 @@ summary::-webkit-details-marker{
 
     .hero-content p{
         font-size: 1rem;
-        max-width:100%;
+        max-width: 100%;
     }
 
     .hero-btn{
-        padding:10px 25px;
+        padding: 10px 25px;
     }
 
 
@@ -844,43 +919,89 @@ summary::-webkit-details-marker{
 
     .container{
         flex-direction: column;
-        align-items:center;
-        gap:25px;
-        margin:20px;
+        align-items: center;
+        gap: 25px;
+        margin: 20px;
     }
 
     .container div{
-        width:90%;
-        height:230px;
+        width: 90%;
+        height: 230px;
     }
 
 
-    /* About Section */
+    /* About */
+
+    .about{
+        padding: 10px;
+    }
 
     .about.text{
-        width:90%;
-        padding:30px;
-        min-height:auto;
+        width: 90%;
+        padding: 30px;
+        min-height: auto;
     }
 
     .about.text h2{
-        font-size:2rem;
+        font-size: 2rem;
     }
 
     .about.text p{
-        font-size:1rem;
+        font-size: 1rem;
     }
 
 
     /* Intervention Images */
 
     .image-grid{
-        grid-template-columns:1fr;
-        gap:20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 10px;
     }
 
     .image-grid img{
-        height:250px;
+        height: 250px;
+    }
+
+
+    /* R Section */
+
+    .r{
+        padding: 2rem 0.5rem;
+    }
+
+    .r .p{
+        width: 92%;
+        padding: 1.5rem;
+    }
+
+    .r .p h1{
+        font-size: 1.8rem;
+    }
+
+    .r .p li{
+        font-size: 1rem;
+        text-align: left;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial{
+        width: 90%;
+        padding: 25px;
+        margin: 30px auto;
+    }
+
+    .testimonial h1{
+        font-size: 1.8rem;
+    }
+
+    .testimonial .t1,
+    .testimonial .t2,
+    .testimonial .t3{
+        font-size: 1rem;
+        padding: 18px;
     }
 
 
@@ -890,196 +1011,1574 @@ summary::-webkit-details-marker{
     .mission-section,
     .work-section,
     .gallery-section{
-        padding:40px 15px;
+        padding: 40px 15px;
     }
-
 
     .about-container h1,
     .about-container h2{
-        font-size:30px;
+        font-size: 30px;
     }
 
-
     .about-container p{
-        font-size:17px;
+        font-size: 17px;
     }
 
 
     /* Work Cards */
 
     .work-cards{
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 25px;
     }
 
     .work-card{
-        width:90%;
+        width: 90%;
     }
 
 
     /* Gallery */
 
     .gallery{
-        flex-direction:column;
-        align-items:center;
+        flex-direction: column;
+        align-items: center;
     }
 
     .gallery img{
-        width:90%;
-        height:220px;
+        width: 90%;
+        height: 220px;
     }
 
 
     /* Contact */
 
     .contact-container{
-        flex-direction:column;
-        width:90%;
-        padding:25px;
-        gap:25px;
+        flex-direction: column;
+        width: 90%;
+        padding: 25px;
+        gap: 25px;
+        margin: 30px auto;
     }
-
 
     .contact-info,
     .contact-form{
-        width:100%;
+        width: 100%;
     }
 
 
-
-    /* Campaign Section */
+    /* Campaign */
 
     .campaign,
     .reverse{
-        flex-direction:column;
-        gap:25px;
-        margin:30px 15px;
+        flex-direction: column;
+        gap: 25px;
+        margin: 30px 15px;
     }
 
+    .campaign-image,
+    .campaign-content{
+        width: 100%;
+    }
 
     .campaign-image img{
-        height:250px;
+        height: 250px;
     }
-
 
     .campaign-content h2{
-        font-size:24px;
+        font-size: 24px;
     }
 
 
-    /* Login Page */
+    /* Login */
+
+    .login-page{
+        padding: 25px 15px;
+    }
 
     .login-box{
-        width:90%;
-        padding:25px;
+        width: 90%;
+        padding: 25px;
     }
 
 
-
-    /* Join Page */
+    /* Join */
 
     .join-header{
-        padding:50px 15px;
+        padding: 50px 15px;
     }
-
 
     .join-header h1{
-        font-size:32px;
+        font-size: 32px;
     }
-
 
     .join-header p{
-        width:95%;
-        font-size:17px;
+        width: 95%;
+        font-size: 17px;
     }
-
 
     .join-container{
-        width:90%;
-        padding:25px;
+        width: 90%;
+        padding: 25px;
+        margin: 35px auto;
     }
 
-
     .join-container h2{
-        font-size:28px;
+        font-size: 28px;
     }
 
 
     /* Footer */
 
+    .footer{
+        padding: 35px 20px;
+    }
+
     .sponsor-list li{
-        display:block;
-        margin:12px 0;
+        display: block;
+        margin: 12px 0;
     }
 
 }
 
 
+/* ================= SMALL PHONES ================= */
 
-/* Smaller Phones */
+@media (max-width: 480px){
 
-@media (max-width:480px){
+    .navbar{
+        padding: 12px;
+    }
 
     .logo{
-        font-size:22px;
+        font-size: 22px;
     }
 
+    .navlinks{
+        gap: 12px;
+    }
+
+
+    /* Hero */
+
+    .hero{
+        min-height: 75vh;
+        padding: 45px 15px;
+    }
 
     .hero-content h1{
-        font-size:1.8rem;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
     }
-
 
     .hero-content p{
-        font-size:0.95rem;
+        font-size: 0.95rem;
+        line-height: 1.5;
+        margin-bottom: 22px;
     }
 
+    .hero-btn{
+        padding: 9px 20px;
+        font-size: 14px;
+    }
+
+
+    /* Home Cards */
+
+    .container{
+        margin: 15px;
+        gap: 20px;
+    }
 
     .container div{
-        width:100%;
-        height:200px;
+        width: 100%;
+        height: 200px;
     }
 
+
+    /* About */
 
     .about.text{
-        padding:20px;
+        width: 100%;
+        padding: 20px;
     }
-
 
     .about.text h2{
-        font-size:1.7rem;
+        font-size: 1.7rem;
     }
 
+    .about.text p{
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+
+    /* Images */
+
+    .image-grid{
+        padding: 0 5px;
+        gap: 15px;
+    }
 
     .image-grid img{
-        height:200px;
+        height: 200px;
     }
 
+
+    /* R */
+
+    .r{
+        padding: 1.5rem 0.3rem;
+    }
+
+    .r .p{
+        width: 100%;
+        padding: 20px;
+    }
+
+    .r .p h1{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+    }
+
+    .r .p li{
+        font-size: 0.95rem;
+        line-height: 1.5;
+        padding-left: 1rem;
+    }
+
+
+    /* Testimonials */
+
+    .testimonial{
+        width: 95%;
+        padding: 20px;
+        margin: 25px auto;
+    }
+
+    .testimonial h1{
+        font-size: 1.5rem;
+        letter-spacing: 1px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial .t1,
+    .testimonial .t2,
+    .testimonial .t3{
+        padding: 15px;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+
+
+    /* About Page */
+
+    .about-page,
+    .mission-section,
+    .work-section,
+    .gallery-section{
+        padding: 30px 12px;
+    }
+
+    .about-container h1,
+    .about-container h2{
+        font-size: 26px;
+    }
+
+    .about-container p{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+
+    /* Work */
+
+    .work-cards{
+        margin-top: 20px;
+    }
 
     .work-card{
-        width:100%;
+        width: 100%;
+        padding: 22px;
     }
 
+    .work-card h3{
+        font-size: 21px;
+    }
+
+    .work-card p{
+        font-size: 16px;
+    }
+
+
+    /* Gallery */
+
+    .gallery{
+        margin-top: 25px;
+        gap: 15px;
+    }
+
+    .gallery img{
+        width: 100%;
+        height: 200px;
+    }
+
+
+    /* Contact */
 
     .contact-container{
-        width:95%;
-        padding:20px;
+        width: 95%;
+        padding: 20px;
+        margin: 25px auto;
+        gap: 20px;
     }
 
+    .contact-info h2,
+    .contact-form h2{
+        font-size: 21px;
+    }
+
+    .contact-info p{
+        font-size: 15px;
+    }
+
+    .contact-form input,
+    .contact-form textarea{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+
+    /* Campaign */
+
+    .campaign,
+    .reverse{
+        margin: 25px 10px;
+        gap: 20px;
+    }
+
+    .campaign-image img{
+        height: 200px;
+    }
+
+    .campaign-content h2{
+        font-size: 21px;
+    }
+
+    .campaign-content p{
+        font-size: 15px;
+    }
+
+
+    /* Login */
+
+    .login-page{
+        padding: 20px 10px;
+    }
+
+    .login-box{
+        width: 95%;
+        padding: 20px;
+    }
+
+    .login-box h2{
+        font-size: 22px;
+    }
+
+
+    /* Join */
+
+    .join-header{
+        padding: 40px 12px;
+    }
+
+    .join-header h1{
+        font-size: 28px;
+        line-height: 1.2;
+    }
+
+    .join-header p{
+        width: 100%;
+        font-size: 16px;
+        line-height: 1.6;
+    }
 
     .join-container{
-        width:95%;
-        padding:20px;
+        width: 95%;
+        padding: 20px;
+        margin: 25px auto;
     }
 
+    .join-container h2{
+        font-size: 24px;
+    }
+
+    .join-container p{
+        font-size: 15px;
+    }
+
+    .join-container input,
+    .join-container select,
+    .join-container textarea{
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .join-container button{
+        font-size: 15px;
+        padding: 11px;
+    }
+
+
+    /* Footer */
 
     .footer{
-        padding:30px 15px;
+        padding: 30px 15px;
     }
 
-
     .footer h2{
-        font-size:1.5rem;
+        font-size: 1.5rem;
+    }
+
+    .footer p{
+        font-size: 0.9rem;
     }
 
 }
+
+
+/* ================= VERY SMALL PHONES ================= */
+
+@media (max-width: 360px){
+
+    .logo{
+        font-size: 20px;
+    }
+
+    .navlinks{
+        gap: 10px;
+    }
+
+    .navlinks a{
+        font-size: 14px;
+    }
+
+    .hero{
+        padding: 40px 12px;
+    }
+
+    .hero-content h1{
+        font-size: 1.55rem;
+    }
+
+    .hero-content p{
+        font-size: 0.9rem;
+    }
+
+    .hero-btn{
+        padding: 8px 17px;
+        font-size: 13px;
+    }
+
+    .container{
+        margin: 10px;
+    }
+
+    .container div{
+        height: 180px;
+    }
+
+    .about.text{
+        padding: 15px;
+    }
+
+    .about.text h2{
+        font-size: 1.5rem;
+    }
+
+    .about.text p{
+        font-size: 0.9rem;
+    }
+
+    .image-grid img{
+        height: 180px;
+    }
+
+    .testimonial{
+        width: 96%;
+        padding: 15px;
+    }
+
+    .testimonial h1{
+        font-size: 1.35rem;
+    }
+
+    .work-card{
+        padding: 18px;
+    }
+
+    .gallery img{
+        height: 180px;
+    }
+
+    .contact-container{
+        width: 96%;
+        padding: 15px;
+    }
+
+    .login-box{
+        width: 96%;
+        padding: 18px;
+    }
+
+    .join-container{
+        width: 96%;
+        padding: 15px;
+    }
+
+    .join-header h1{
+        font-size: 25px;
+    }
+
+}
+
+/* =========================================================
+   HOVER EFFECTS ONLY
+   ========================================================= */
+
+/* ================= NAVBAR ================= */
+
+.logo,
+.navlinks a,
+.button button {
+    transition: transform 0.3s ease, color 0.3s ease, background-color 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.04);
+}
+
+.navlinks a:hover {
+    transform: translateY(-2px);
+}
+
+
+/* ================= HERO ================= */
+
+.hero-btn {
+    transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+
+/* ================= HOME IMAGE BOXES ================= */
+
+.container div {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.container img:hover {
+    transform: scale(1.04);
+}
+
+
+/* ================= ABOUT BOX ================= */
+
+.about.text {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about.text:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.18);
+}
+
+
+/* ================= INTERVENTION IMAGES ================= */
+
+.image-grid img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+/* ================= R SECTION BOX ================= */
+
+.r .p {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.r .p:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+
+/* ================= LIST ITEMS ================= */
+
+.r .p li {
+    transition: transform 0.3s ease;
+}
+
+.r .p li:hover {
+    transform: translateX(5px);
+}
+
+
+/* ================= TESTIMONIAL BOXES ================= */
+
+.testimonial {
+    transition: box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
+}
+
+.testimonial .t1,
+.testimonial .t2,
+.testimonial .t3 {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial .t1:hover,
+.testimonial .t2:hover,
+.testimonial .t3:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+}
+
+
+/* ================= FOOTER ================= */
+
+.sponsor-list li {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.sponsor-list li:hover {
+    transform: translateY(-3px);
+    color: #ff4081;
+}
+
+
+/* ================= WORK CARDS ================= */
+
+.work-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+
+/* ================= GALLERY IMAGES ================= */
+
+.gallery img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+/* ================= CONTACT BOX ================= */
+
+.contact-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.35);
+}
+
+
+/* ================= CONTACT BUTTON ================= */
+
+.contact-form button {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+}
+
+
+/* ================= CAMPAIGN IMAGES ================= */
+
+.campaign-image {
+    transition: transform 0.3s ease;
+}
+
+.campaign-image:hover {
+    transform: translateY(-4px);
+}
+
+.campaign-image img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.campaign-image img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+
+/* ================= READ BUTTON ================= */
+
+.read-btn {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.read-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+
+/* ================= LOGIN BOX ================= */
+
+.login-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 22px rgba(0,0,0,0.25);
+}
+
+
+/* ================= LOGIN BUTTON ================= */
+
+.login-box button {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-box button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+}
+
+
+/* ================= LOGIN LINKS ================= */
+
+.forgot a,
+.signup a {
+    transition: color 0.3s ease;
+}
+
+.forgot a:hover,
+.signup a:hover {
+    color: #367b60;
+}
+
+
+/* ================= JOIN FORM BOX ================= */
+
+.join-container {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 20px rgba(0,0,0,0.2);
+}
+
+
+/* ================= JOIN BUTTON ================= */
+
+.join-container button {
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-container button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.2);
+}
+
+
+/* ================= JOIN INPUTS ================= */
+
+.join-container input,
+.join-container select,
+.join-container textarea,
+.login-box input,
+.contact-form input,
+.contact-form textarea {
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.join-container input:hover,
+.join-container select:hover,
+.join-container textarea:hover,
+.login-box input:hover,
+.contact-form input:hover,
+.contact-form textarea:hover {
+    box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+}
+
+
+/* ================= TOUCH DEVICES ================= */
+/* Prevents hover effects from feeling stuck on phones */
+
+@media (hover: none) {
+
+    .logo:hover,
+    .navlinks a:hover,
+    .hero-btn:hover,
+    .container div:hover,
+    .container img:hover,
+    .about.text:hover,
+    .image-grid img:hover,
+    .r .p:hover,
+    .r .p li:hover,
+    .testimonial:hover,
+    .testimonial .t1:hover,
+    .testimonial .t2:hover,
+    .testimonial .t3:hover,
+    .work-card:hover,
+    .gallery img:hover,
+    .contact-container:hover,
+    .campaign-image:hover,
+    .campaign-image img:hover,
+    .login-box:hover,
+    .join-container:hover {
+        transform: none;
+    }
+
+}
+
+/* =========================================================
+   JOIN SUCCESS PAGE
+   ========================================================= */
+
+/* ================= SUCCESS PAGE ================= */
+
+.success-page {
+    min-height: calc(100vh - 60px);
+    background: #f2eddf;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+
+/* ================= SUCCESS CARD ================= */
+
+.success-card {
+    width: 700px;
+    max-width: 95%;
+    background: #fffaf5;
+    padding: 45px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.18);
+}
+
+
+/* ================= SUCCESS TICK ================= */
+
+.success-icon {
+    width: 85px;
+    height: 85px;
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #e5d3c3;
+    color: #0d5436;
+
+    border: 4px solid #0d5436;
+    border-radius: 50%;
+
+    font-size: 48px;
+    font-weight: bold;
+}
+
+
+/* ================= SUCCESS HEADING ================= */
+
+.success-card h1 {
+    color: #004B49;
+    font-size: 32px;
+    margin-bottom: 12px;
+}
+
+.success-message {
+    color: #555;
+    font-size: 17px;
+    line-height: 1.6;
+    max-width: 550px;
+    margin: auto;
+}
+
+
+/* ================= MEMBER ID ================= */
+
+.member-id-box {
+    margin: 30px auto;
+    padding: 18px;
+
+    background: #e5d3c3;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.member-id-box span {
+    color: #555;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.member-id-box strong {
+    color: #004B49;
+    font-size: 23px;
+    letter-spacing: 1px;
+}
+
+
+/* ================= DETAILS BOX ================= */
+
+.details-box {
+    background: white;
+    border-radius: 10px;
+    padding: 25px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+}
+
+.details-box h2 {
+    text-align: center;
+    color: #403d3d;
+    font-size: 23px;
+    margin-bottom: 20px;
+}
+
+
+/* ================= DETAILS ROW ================= */
+
+.detail-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 13px 5px;
+    border-bottom: 1px solid #eee;
+}
+
+.detail-row:last-child {
+    border-bottom: none;
+}
+
+.detail-row span {
+    color: #666;
+}
+
+.detail-row strong {
+    color: #333;
+}
+
+
+/* ================= ACTIVE STATUS ================= */
+
+.active-status {
+    color: #0d5436 !important;
+}
+
+
+/* ================= CONFIRMATION ================= */
+
+.confirmation {
+    margin-top: 25px;
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 18px;
+
+    background: #f5f1e8;
+    border-left: 5px solid #0d5436;
+
+    border-radius: 8px;
+    text-align: left;
+}
+
+.confirmation-tick {
+    min-width: 35px;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: #0d5436;
+    color: white;
+
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.confirmation h3 {
+    color: #004B49;
+    margin-bottom: 5px;
+}
+
+.confirmation p {
+    color: #666;
+    line-height: 1.5;
+    font-size: 14px;
+}
+
+
+/* ================= SUCCESS BUTTONS ================= */
+
+.success-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.success-buttons a {
+    text-decoration: none;
+    padding: 12px 25px;
+    border-radius: 6px;
+    font-weight: 600;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                background-color 0.3s ease;
+}
+
+.home-btn {
+    background: #004B49;
+    color: white;
+}
+
+.join-again-btn {
+    background: #cda977;
+    color: black;
+}
+
+.success-buttons a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 12px rgba(0,0,0,0.18);
+}
+
+
+/* =========================================================
+   JOIN SUCCESS PAGE RESPONSIVENESS
+   ========================================================= */
+
+@media (max-width: 768px){
+
+    .success-page {
+        padding: 35px 15px;
+    }
+
+    .success-card {
+        padding: 30px 20px;
+    }
+
+    .success-card h1 {
+        font-size: 27px;
+    }
+
+    .success-message {
+        font-size: 15px;
+    }
+
+    .detail-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .success-buttons {
+        flex-direction: column;
+    }
+
+    .success-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 480px){
+
+    .success-page {
+        padding: 25px 10px;
+    }
+
+    .success-card {
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .success-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+    }
+
+    .success-card h1 {
+        font-size: 24px;
+    }
+
+    .member-id-box strong {
+        font-size: 19px;
+    }
+
+    .details-box {
+        padding: 18px;
+    }
+
+    .details-box h2 {
+        font-size: 20px;
+    }
+
+    .confirmation {
+        align-items: flex-start;
+    }
+
+}
+
+
+@media (max-width: 360px){
+
+    .success-card {
+        width: 96%;
+        padding: 20px 12px;
+    }
+
+    .success-card h1 {
+        font-size: 21px;
+    }
+
+    .success-message {
+        font-size: 14px;
+    }
+
+    .member-id-box strong {
+        font-size: 17px;
+    }
+
+    .details-box {
+        padding: 15px;
+    }
+
+    .detail-row {
+        font-size: 14px;
+    }
+
+    .confirmation {
+        padding: 15px;
+    }
+
+}
+
+
+```css
+/* =========================================================
+   CONTACT MESSAGE SUCCESS PAGE
+   ========================================================= */
+
+.message-success-page {
+    min-height: calc(100vh - 60px);
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #f5efe4,
+        #eee2cf
+    );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 60px 20px;
+}
+
+
+/* ================= SUCCESS CARD ================= */
+
+.message-success-card {
+    width: 760px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    background: #fffdf9;
+
+    border-radius: 18px;
+
+    padding: 50px;
+
+    text-align: center;
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+
+/* ================= SUCCESS ICON ================= */
+
+.message-success-icon {
+    width: 90px;
+    height: 90px;
+
+    margin: 0 auto 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #e1eee7;
+
+    border: 4px solid #0d5436;
+
+    color: #0d5436;
+
+    font-size: 50px;
+    font-weight: bold;
+}
+
+
+/* ================= HEADING ================= */
+
+.message-success-card h1 {
+    color: #004B49;
+    font-size: 34px;
+    margin-bottom: 14px;
+}
+
+.message-success-intro {
+    max-width: 590px;
+    margin: 0 auto;
+
+    color: #5d5d5d;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+
+/* ================= REFERENCE ================= */
+
+.message-reference-box {
+    width: 100%;
+
+    margin: 30px auto;
+    padding: 18px 22px;
+
+    background: #efe1cb;
+    border-radius: 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.message-reference-box span {
+    font-size: 13px;
+    color: #666;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.message-reference-box strong {
+    color: #004B49;
+    font-size: 21px;
+    letter-spacing: 1px;
+}
+
+
+/* ================= STATUS BOX ================= */
+
+.message-status-box {
+    width: 100%;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    text-align: left;
+
+    border: 1px solid #eee7dd;
+}
+
+
+/* ================= STATUS ITEM ================= */
+
+.status-item {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 17px 5px;
+
+    border-bottom: 1px solid #eee;
+}
+
+.status-item:last-child {
+    border-bottom: none;
+}
+
+.status-icon {
+    min-width: 34px;
+    height: 34px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background: #0d5436;
+    color: white;
+
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.status-item h3 {
+    color: #004B49;
+    font-size: 17px;
+    margin-bottom: 5px;
+}
+
+.status-item p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+/* ================= RESPONSE NOTE ================= */
+
+.response-note {
+    width: 100%;
+
+    margin-top: 25px;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 15px;
+
+    padding: 20px;
+
+    background: #f5f1e8;
+
+    border-left: 5px solid #cda977;
+
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.response-note-icon {
+    min-width: 32px;
+    height: 32px;
+
+    border-radius: 50%;
+
+    background: #cda977;
+    color: #222;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.response-note h3 {
+    color: #403d3d;
+    margin-bottom: 5px;
+    font-size: 17px;
+}
+
+.response-note p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+
+/* ================= BUTTONS ================= */
+
+.message-success-buttons {
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.message-success-buttons a {
+    display: inline-block;
+
+    padding: 12px 24px;
+
+    border-radius: 7px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background-color 0.3s ease;
+}
+
+.message-home-btn {
+    background: #004B49;
+    color: white;
+}
+
+.message-contact-btn {
+    background: #cda977;
+    color: black;
+}
+
+.message-success-buttons a:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 6px 14px rgba(0,0,0,0.18);
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .message-success-page {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    .message-success-card {
+        width: 100%;
+        max-width: 650px;
+        padding: 35px 22px;
+        margin: 0 auto;
+    }
+
+    .message-success-card h1 {
+        font-size: 28px;
+    }
+
+    .message-success-intro {
+        font-size: 15px;
+    }
+
+    .message-success-buttons {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .message-success-buttons a {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .message-success-page {
+        padding: 30px 10px;
+    }
+
+    .message-success-card {
+        width: 100%;
+        padding: 28px 16px;
+    }
+
+    .message-success-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 40px;
+    }
+
+    .message-success-card h1 {
+        font-size: 24px;
+    }
+
+    .message-reference-box strong {
+        font-size: 17px;
+    }
+
+    .message-status-box {
+        padding: 18px;
+    }
+
+    .status-item {
+        gap: 10px;
+    }
+
+    .response-note {
+        padding: 15px;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .message-success-card {
+        padding: 22px 12px;
+    }
+
+    .message-success-card h1 {
+        font-size: 21px;
+    }
+
+    .message-success-intro {
+        font-size: 14px;
+    }
+}
+```

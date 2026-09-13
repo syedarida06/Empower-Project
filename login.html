@@ -1,79 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log in</title>
+
+    <title>Log in | Empower</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
     <header>
-    <div class="navbar">
-      <div class="logo">EMPOWER</div>
-      <ul class="navlinks">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-        <li><a href="initiatives.html">Initiatives</a></li>
-        <li><a href="login.html">Log in</a></li>
-      </ul>
-    </div>
-  </header>
+        <div class="navbar">
 
-  <section class="login-page">
-
-    <div class="login-box">
-
-        <h2>Login</h2>
-
-        <p>Welcome back! Please login to continue.</p>
-
-        <form>
-
-            <label>Email</label>
-            <input type="email" placeholder="Enter your email">
-
-            <label>Password</label>
-            <input type="password" placeholder="Enter your password">
-
-            <div class="forgot">
-                <a href="#">Forgot Password?</a>
+            <div class="logo">
+                EMPOWER
             </div>
 
-            <button type="submit">Login</button>
+            <ul class="navlinks" id="navlinks">
 
-        </form>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
 
-        <p class="signup">
-            New here?
-            <a href="#">Create an Account</a>
-        </p>
+                <li>
+                    <a href="about.html">About</a>
+                </li>
 
-    </div>
+                <li>
+                    <a href="initiatives.html">Initiatives</a>
+                </li>
 
-</section>
+                <li>
+                    <a href="get-support.html">Get Support</a>
+                </li>
 
-  <footer class="footer">
-    <div class="footer-content">
-        <h2>CHANGE MAKERS WHO STAND WITH US</h2>
-        <p>We extend our heartfelt gratitude to all our sponsors who make our mission possible.</p>
-        
-        <ul class="sponsor-list">
-            <li>ABC Foundation</li>
-            <li>XYZ Trust</li>
-            <li>Global Care Initiative</li>
-            <li>Community Builders</li>
-        </ul>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2026 Empower NGO | Designed with care by Syeda</p>
-            <p>email - empower@gmail.com</p>
+                <li>
+                    <a href="track-case.html">Track Case</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+                <li>
+                    <a href="login.html">Log In</a>
+                </li>
+
+            </ul>
+
         </div>
-    </div>
-</footer>
-  
+    </header>
 
-    
+
+    <!-- =========================
+         LOGIN SECTION
+    ========================== -->
+
+    <section class="login-page">
+
+        <div class="login-box">
+
+            <h2>Login</h2>
+
+            <p>
+                Welcome back! Please login to continue.
+            </p>
+
+
+            <form id="loginForm">
+
+                <label for="loginEmail">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="loginEmail"
+                    placeholder="Enter your email"
+                    required
+                >
+
+
+                <label for="loginPassword">
+                    Password
+                </label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="Enter your password"
+                    required
+                >
+
+
+                <div class="forgot">
+
+                    <a href="#">
+                        Forgot Password?
+                    </a>
+
+                </div>
+
+
+                <button type="submit">
+                    Login
+                </button>
+
+            </form>
+
+
+            <!-- Login status message -->
+
+            <p id="loginMessage"></p>
+
+
+            <!-- Create Account -->
+
+            <p class="signup">
+
+                New here?
+
+                <a href="create-account.html">
+                    Create an Account
+                </a>
+
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>
+                CHANGE MAKERS WHO STAND WITH US
+            </h2>
+
+            <p>
+                We extend our heartfelt gratitude to all our sponsors
+                who make our mission possible.
+            </p>
+
+
+            <ul class="sponsor-list">
+
+                <li>
+                    ABC Foundation
+                </li>
+
+                <li>
+                    XYZ Trust
+                </li>
+
+                <li>
+                    Global Care Initiative
+                </li>
+
+                <li>
+                    Community Builders
+                </li>
+
+            </ul>
+
+
+            <div class="footer-bottom">
+
+                <p>
+                    &copy; 2026 Empower NGO | Designed with care by Syeda
+                </p>
+
+                <p>
+                    email - empower@gmail.com
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- =========================
+         LOGIN JAVASCRIPT
+    ========================== -->
+
+    <script src="login.js"></script>
+
 </body>
+
 </html>
+```
